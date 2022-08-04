@@ -6,5 +6,6 @@ begin
 select IIDLABORATORIO,NOMBRE,DIRECCION,PERSONACONTACTO
 from Laboratorio
 where BHABILITADO=1
+---asasas
 end
 GO
