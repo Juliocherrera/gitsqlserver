@@ -1,0 +1,8 @@
+﻿CREATE TABLE [dbo].[Envoltura] (
+  [IIDENVOLTURA] [int] IDENTITY,
+  [NOMBRE] [varchar](100) NULL,
+  [BHABILITADO] [int] NULL,
+  CONSTRAINT [PK_Envoltura] PRIMARY KEY CLUSTERED ([IIDENVOLTURA])
+)
+ON [PRIMARY]
+GO

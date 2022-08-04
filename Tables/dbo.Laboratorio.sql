@@ -1,0 +1,11 @@
+﻿CREATE TABLE [dbo].[Laboratorio] (
+  [IIDLABORATORIO] [int] IDENTITY,
+  [NOMBRE] [varchar](100) NULL,
+  [DIRECCION] [varchar](100) NULL,
+  [BHABILITADO] [int] NULL,
+  [PERSONACONTACTO] [varchar](300) NULL,
+  [NUMEROCONTACTO] [varchar](9) NULL,
+  CONSTRAINT [PK_Laboratorio] PRIMARY KEY CLUSTERED ([IIDLABORATORIO])
+)
+ON [PRIMARY]
+GO

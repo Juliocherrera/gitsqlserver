@@ -1,0 +1,30 @@
+﻿CREATE TABLE [dbo].[TESTPISA] (
+  [idenvio] [varchar](100) NULL,
+  [rfcvendedora] [varchar](200) NULL,
+  [razonsocialremitente] [varchar](100) NULL,
+  [rfcoperador] [varchar](100) NULL,
+  [razonsocialcontratante] [varchar](200) NULL,
+  [rfccliente] [varchar](100) NULL,
+  [razonsocialcliente] [varchar](100) NULL,
+  [secuencia] [varchar](100) NULL,
+  [fechahorallegada] [varchar](100) NULL,
+  [fechahorasalida] [varchar](100) NULL,
+  [claveprodservicio] [varchar](100) NULL,
+  [descripcion] [varchar](500) NULL,
+  [claveunidad] [varchar](100) NULL,
+  [materialpeligroso] [varchar](100) NULL,
+  [pesoenkg] [varchar](100) NULL,
+  [valormercancia] [varchar](100) NULL,
+  [moneda] [varchar](100) NULL,
+  [numpiezas] [varchar](100) NULL,
+  [unidadpeso] [varchar](100) NULL,
+  [secuenciaorigen] [varchar](100) NULL,
+  [municipio1] [varchar](100) NULL,
+  [calle1] [varchar](100) NULL,
+  [estado1] [varchar](100) NULL,
+  [pais1] [varchar](100) NULL,
+  [colonia1] [varchar](100) NULL,
+  [codigopostal1] [varchar](100) NULL
+)
+ON [PRIMARY]
+GO

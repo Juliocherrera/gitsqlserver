@@ -1,0 +1,17 @@
+﻿CREATE TABLE [dbo].[PaginaTipoUsuario] (
+  [IIDPAGINATIPOUSUARIO] [int] IDENTITY,
+  [IIDPAGINA] [int] NULL,
+  [IIDTIPOUSUARIO] [int] NULL,
+  [BHABILITADO] [int] NULL,
+  CONSTRAINT [PK_PaginaTipoUsuario] PRIMARY KEY CLUSTERED ([IIDPAGINATIPOUSUARIO])
+)
+ON [PRIMARY]
+GO
+
+ALTER TABLE [dbo].[PaginaTipoUsuario]
+  ADD CONSTRAINT [FK_PaginaTipoUsuario_Pagina] FOREIGN KEY ([IIDPAGINA]) REFERENCES [dbo].[Pagina] ([IIDPAGINA])
+GO
+
+ALTER TABLE [dbo].[PaginaTipoUsuario]
+  ADD CONSTRAINT [FK_PaginaTipoUsuario_TipoUsuario] FOREIGN KEY ([IIDTIPOUSUARIO]) REFERENCES [dbo].[TipoUsuario] ([IIDTIPOUSUARIO])
+GO

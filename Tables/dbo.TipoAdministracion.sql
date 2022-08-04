@@ -1,0 +1,9 @@
+﻿CREATE TABLE [dbo].[TipoAdministracion] (
+  [IIDTIPOADMINISTRACION] [int] IDENTITY,
+  [NOMBRE] [varchar](100) NULL,
+  [DESCRIPCION] [varchar](300) NULL,
+  [BHABILITADO] [int] NULL,
+  CONSTRAINT [PK_TipoAdministracioness] PRIMARY KEY CLUSTERED ([IIDTIPOADMINISTRACION])
+)
+ON [PRIMARY]
+GO

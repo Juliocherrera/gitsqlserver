@@ -1,0 +1,24 @@
+﻿CREATE TABLE [dbo].[Persona] (
+  [IIDPERSONA] [int] IDENTITY,
+  [NOMBRE] [varchar](100) NULL,
+  [APPATERNO] [varchar](100) NULL,
+  [APMATERNO] [varchar](100) NULL,
+  [CORREO] [varchar](100) NULL,
+  [DIRECCION] [varchar](300) NULL,
+  [IIDSEXO] [int] NULL,
+  [BHABILITADO] [int] NULL,
+  [NUMEROTELEFONICO] [varchar](9) NULL,
+  [BEMPLEADO] [int] NULL,
+  [IIDSUCURSAL] [int] NULL,
+  CONSTRAINT [PK_Persona] PRIMARY KEY CLUSTERED ([IIDPERSONA])
+)
+ON [PRIMARY]
+GO
+
+ALTER TABLE [dbo].[Persona]
+  ADD CONSTRAINT [FK_Persona_Sexo] FOREIGN KEY ([IIDSEXO]) REFERENCES [dbo].[Sexo] ([IIDSEXO])
+GO
+
+ALTER TABLE [dbo].[Persona]
+  ADD CONSTRAINT [FK_Persona_Sucursal] FOREIGN KEY ([IIDSUCURSAL]) REFERENCES [dbo].[Sucursal] ([IIDSUCURSAL])
+GO

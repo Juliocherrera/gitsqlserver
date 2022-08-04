@@ -1,0 +1,8 @@
+﻿CREATE TABLE [dbo].[Sexo] (
+  [IIDSEXO] [int] IDENTITY,
+  [NOMBRE] [varchar](100) NULL,
+  [BHABILITADO] [int] NULL,
+  CONSTRAINT [PK_Sexo] PRIMARY KEY CLUSTERED ([IIDSEXO])
+)
+ON [PRIMARY]
+GO
