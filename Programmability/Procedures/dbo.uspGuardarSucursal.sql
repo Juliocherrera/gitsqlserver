@@ -1,6 +1,6 @@
 ﻿SET QUOTED_IDENTIFIER, ANSI_NULLS ON
 GO
-create procedure [dbo].[uspGuardarSucursal]
+CREATE procedure [dbo].[uspGuardarSucursal]
 @iidsucursal int,
 @nombre varchar(100),
 @direccion varchar(300),
@@ -19,6 +19,7 @@ update Sucursal
 set NOMBRE=@nombre,DIRECCION=@direccion,
 FOTOSUCURSAL=@fotosucursal,NOMBREFOTOSUCURSAL=@nombrefotosucursal
 where IIDSUCURSAL=@iidsucursal
+----sddsdsdsdsdsc lksjkjkjdsljds modificado
 
 end
 GO
