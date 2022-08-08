@@ -8,5 +8,6 @@ begin
 	DELETE FROM TCME
 	SET @Resultado = 0		
 	--- modificacion ---
+	--- modificacion 2 ---
 end
 GO
